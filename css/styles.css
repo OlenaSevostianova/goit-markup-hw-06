@@ -940,14 +940,17 @@ nav {
   fill: var(--btn-text-light);
 }
 
-.contact-form-checkbox:checked
-  + .contact-form-checkbox-label
-  > .icon-check-wrapper,
 .contact-form-checkbox:focus
   + .contact-form-checkbox-label
   > .icon-check-wrapper {
+  border-color: var(--accent-color);
+}
+
+.contact-form-checkbox:checked
+  + .contact-form-checkbox-label
+  > .icon-check-wrapper {
   background: var(--accent-color);
-  border: var(--accent-color);
+  border: none;
 }
 
 .conditions {
